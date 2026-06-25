@@ -1,0 +1,55 @@
+/* SOC Assistant — professional dark-mode design tokens
+   These CSS custom properties are consumed by SOCAssistant.jsx inline styles. */
+:root {
+  /* Backgrounds */
+  --color-background-primary: #0f1117;
+  --color-background-secondary: #161922;
+  --color-background-tertiary: #1f2430;
+  --color-background-danger: #2a1416;
+  --color-background-warning: #2a2410;
+  --color-background-success: #102a1a;
+  --color-background-info: #11212e;
+
+  /* Borders */
+  --color-border-secondary: #2a2f3a;
+  --color-border-tertiary: #232834;
+
+  /* Text */
+  --color-text-primary: #e6e9ef;
+  --color-text-secondary: #9aa3b2;
+  --color-text-danger: #ff6b6b;
+  --color-text-warning: #ffcc66;
+  --color-text-success: #4ade80;
+  --color-text-info: #5cc8ff;
+
+  /* Radii */
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+  background: var(--color-background-secondary);
+  color: var(--color-text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button { cursor: pointer; font-family: inherit; }
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--color-background-primary); }
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-secondary);
+  border-radius: 6px;
+}
